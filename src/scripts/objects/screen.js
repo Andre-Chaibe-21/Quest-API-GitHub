@@ -17,10 +17,8 @@ const screen = {
                                      </ul>
                                   </div>`
 
-
     let eventsItens = ""
     let repositoriesItens = ""
-
 
     user.events.forEach(event => {
       if (event.type === "PushEvent") eventsItens += `<li>${event.repo.name}  - <span>${event.payload.commits[0].message}</span></li>`
@@ -38,27 +36,19 @@ const screen = {
                                   <li title="Linguagem de programação"><i class="fa-solid fa-code"></i>${repo.language ?? "❌"}</li>
                                </ul>
                            </li>`
-
-
-
-
     })
 
-    if (user.events.length > 0) {
-      this.userProfile.innerHTML += `<div class="list-events">
-                                       <h2>Eventos do usuário</h2>
-                                       <ul>${eventsItens}</ul>
-                                    <div>`
-    } else this.userProfile.innerHTML += `<h3>Sem Eventos</h3>`
+    if (user.events.length > 0) this.userProfile.innerHTML += `<div class="list-events">
+                                                                  <h2>Eventos do usuário</h2>
+                                                                  <ul>${eventsItens}</ul>
+                                                               <div>`
+     else this.userProfile.innerHTML += `<h3>Sem Eventos ❌</h3>`
 
-
-    if (user.repositories.length > 0) {
-
-      this.userProfile.innerHTML += `<section class="repositories">
-                                       <h2>Repositórios</h2>
-                                       <ul>${repositoriesItens}</ul>
-                                     </section>`
-    };
+    if (user.repositories.length > 0) this.userProfile.innerHTML += `<section class="repositories">
+                                                                        <h2>Repositórios</h2>
+                                                                        <ul>${repositoriesItens}</ul>
+                                                                     </section>`
+    else this.userProfile.innerHTML += `<h3>Sem Repositórios ❌</h3>`
 
   },
 

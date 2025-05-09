@@ -57,6 +57,10 @@ main {
   margin-bottom: 30px;
 }
 
+.container h3 {
+  margin: 40px;
+}
+
 .container header #input-search {
   width: 400px;
   font-size: 17px;
