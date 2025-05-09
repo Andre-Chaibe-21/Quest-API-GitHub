@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  font-weight: 300;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  font-family: "Kumbh Sans", sans-serif;
+  text-align: center;
+  padding-bottom: 100px;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 0 0;
+}
+
+.devicon-github-original {
+  font-size: 60px;
+  margin-bottom: 30px;
+  color: #000000;
+}
+
+.container {
+  width: 60%;
+  max-width: 960px;
+  box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
+  color: #fff;
+  background-color: #222121;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 30px;
+  padding: 30px;
+  margin: 0 auto;
+}
+
+.container header {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 0;
+}
+
+.container header h2 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 30px;
+}
+
+.container header #input-search {
+  width: 400px;
+  font-size: 17px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid grey;
+}
+
+.container header #btn-search {
+  width: 200px;
+  font-size: 17px;
+  margin: 20px auto 0;
+  padding: 10px;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 1px solid grey;
+  transition: 0.3s ease-in-out;
+}
+
+.container header #btn-search:hover {
+  background-color: hotpink;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.container .profile-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+}
+
+.container .profile-data .info {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.container .profile-data .info .data {
+  padding: 40px;
+  width: 50%;
+}
+
+.container .profile-data .info img {
+  width: 50%;
+  border-radius: 50%;
+  border: 10px solid hotpink;
+}
+
+.container .profile-data .info h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.container .profile-data .info p {
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 23px;
+}
+
+.container .profile-data .repositories h2,
+div.userInformation {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+div.userInformation {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 70px;
+  width: 100%;
+  gap: 30px;
+}
+
+div.userInformation ul {
+  display: flex;
+  gap: 59px;
+}
+
+.container .profile-data .repositories ul li a {
+  padding: 20px;
+  border: 1px solid grey;
+  margin: 20px;
+  display: block;
+  border-radius: 7px;
+  transition: 0.3s ease-in-out;
+}
+
+.container .profile-data .repositories ul li a:hover {
+  background-color: hotpink;
+  color: #fff
+}
+
+.container .profile-data .list-events {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.container .profile-data .list-events ul {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  max-width: 900px;
+}
+
+.container .profile-data .list-events ul li span:hover {
+  transition: 0.3s ease-in-out;
+  color: #ff69b4;
+}
+
+.profile-data .nerdy-information {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 0px 10px 30px 10px;
+  
+}
+
+.profile-data .nerdy-information ul {
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  width: 100%;
+  gap: 5px;
+}
+
+
+.profile-data .nerdy-information li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0px 5px 30px 5px;
+  gap: 5px;
+  background-color: rgba(49, 48, 48, 0.6);
+  padding: 5px 57px;
+  border-radius: 5px;
+  width: 100px;
+}
+
+.profile-data .nerdy-information li svg {
+  font-size: 15px;
+}
+
+.profile-data .nerdy-information li svg {
+  color: rgb(255, 105, 180, 0.7);
+}
+
+
+
+.container .profile-data.hide {
+  display: none;
+}

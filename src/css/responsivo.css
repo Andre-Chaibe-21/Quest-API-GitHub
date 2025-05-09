@@ -1,0 +1,49 @@
+@media (max-width: 1280px) {
+  .container {
+    flex-direction: column;
+    width: 90%;
+    border-radius: 20px;
+  }
+
+  .container header {
+    width: 100%;
+  }
+
+  .container header h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .container header #input-search {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 15% 0;
+  }
+
+  .container .profile-data .info img {
+    margin-bottom: 20px;
+  }
+
+  .container .profile-data .info img,
+  .container .profile-data .info .data {
+    width: 100%;
+    padding: 0;
+  }
+
+  .container .profile-data .repositories ul {
+    flex-direction: column;
+    margin-bottom: 40px;
+  }
+
+  .profile-data .nerdy-information li {
+    margin: 0px 5px 3px 5px;
+  }
+
+
+}
